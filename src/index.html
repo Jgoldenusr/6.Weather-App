@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weather App</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="<%= require('./img/favicon.ico') %>"
+    />
+    <script
+      src="https://kit.fontawesome.com/1f69cd3395.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <i class="fa fa-umbrella header_icon"></i>
+      <span class="header_span">Weather App</span>
+    </header>
+    <div class="main_wrapper">
+      <div class="search_div">
+        <div class="search_wrapper">
+          <div class="search">
+            <input
+              type="text"
+              class="search_bar"
+              placeholder="Ingresa una ciudad, i.e: 'Paris'"
+            />
+            <button type="submit" class="search_button">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div style="min-height: 50vh">
+        <div class="content_wrapper invisible">
+          <div class="content_1">
+            <img id="flag" src="" alt="" />
+            <p id="city" class="text_1"></p>
+          </div>
+          <div class="content_2">
+            <p id="climate" class="text_1"></p>
+            <div class="icon_wrapper">
+              <img id="OWicon" src="" alt="" />
+            </div>
+          </div>
+          <div class="content_1">
+            <div class="row_wrapper" style="width: auto">
+              <i class="fa fa-temperature-half"></i>
+              <p id="temp" class="text_1"></p>
+            </div>
+            <div class="row_wrapper" style="width: auto">
+              <i class="fa fa-temperature-arrow-up"></i>
+              <p id="tempMax" class="text_1"></p>
+            </div>
+            <div class="row_wrapper" style="width: auto">
+              <i class="fa fa-temperature-arrow-down"></i>
+              <p id="tempMin" class="text_1"></p>
+            </div>
+          </div>
+          <div class="content_2">
+            <div class="row_wrapper">
+              <i class="fa fa-droplet"></i>
+              <p id="humidity" class="text_2"></p>
+            </div>
+            <div class="row_wrapper">
+              <i class="fa fa-gauge-simple-high"></i>
+              <p id="pressure" class="text_2"></p>
+            </div>
+          </div>
+          <div class="content_1">
+            <div class="row_wrapper">
+              <i class="fa fa-wind"></i>
+              <p id="windSpeed" class="text_2"></p>
+            </div>
+            <div class="row_wrapper">
+              <i class="fa fa-ruler"></i>
+              <p id="windDeg" class="text_2"></p>
+            </div>
+          </div>
+          <div class="content_2">
+            <div class="row_wrapper">
+              <i class="fa fa-cloud"></i>
+              <p id="clouds" class="text_2"></p>
+            </div>
+            <div class="row_wrapper">
+              <i class="fa fa-eye"></i>
+              <p id="visibility" class="text_2"></p>
+            </div>
+          </div>
+          <div class="content_1">
+            <div class="row_wrapper">
+              <i class="fa fa-sun"></i>
+              <p id="sunrise" class="text_2"></p>
+            </div>
+            <div class="row_wrapper">
+              <i class="fa fa-moon"></i>
+              <p id="sunset" class="text_2"></p>
+            </div>
+          </div>
+        </div>
+        <i class="fa fa-globe"></i>
+      </div>
+    </div>
+    <a class="popup_button" href="#popup" hidden></a>
+    <div id="popup" class="overlay">
+      <div class="popup">
+        <h2 class="popup_header"></h2>
+        <a class="close_button" href="#">&times;</a>
+        <p class="popup_content"></p>
+      </div>
+    </div>
+    <footer>
+      <a href="https://github.com/Jgoldenusr"><i class="fab fa-github"></i></a>
+      <h3>Copyright © 2023 Jgoldenusr</h3>
+    </footer>
+  </body>
+</html>

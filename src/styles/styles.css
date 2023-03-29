@@ -1,0 +1,258 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+  font-family: TenbyFive;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  height: 100%;
+  margin: 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: whitesmoke;
+}
+img,
+h1,
+h2,
+h3 {
+  user-select: none;
+}
+p,
+h1,
+h2,
+h3 {
+  cursor: pointer;
+  margin: 0px;
+}
+h1 {
+  font-size: min(32px, 5vh);
+}
+h2 {
+  font-size: min(24px, 5vh);
+}
+h3 {
+  color: #e6e6e6;
+  font-size: min(20.8px, 5vh);
+}
+header {
+  display: flex;
+  padding: min(1rem, 5vh);
+  justify-content: center;
+  align-items: center;
+  height: min(75px, 20%);
+  font-size: min(50px, 5vh);
+  background-color: #14279b;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 0px 1px white;
+  color: #e6e6e6;
+  flex: 0 0 auto;
+}
+.header_span {
+  text-align: center;
+  font-weight: bold;
+  user-select: none;
+}
+.header_icon {
+  font-size: min(40px, 5vh);
+  margin-right: 0.5rem;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: min(75px, 20%);
+  background-color: #14279b;
+  box-shadow: 0px -2px 0px 1px white;
+  margin-top: 20px;
+  flex: 0 0 auto;
+}
+footer .fab {
+  margin: auto 0.7vw;
+  color: #e6e6e6;
+  font-size: min(30px, 6vh);
+}
+footer .fab:hover {
+  color: white;
+  font-size: min(35px, 7.5vh);
+}
+.search_div {
+  margin-bottom: 1rem;
+}
+.search_wrapper {
+  width: 30vw;
+  margin: auto;
+}
+.search {
+  display: flex;
+}
+.search_bar {
+  font-size: 20px;
+  font-family: TenbyFive;
+  width: 100%;
+  padding: 3px 5px;
+  border: 3px solid #14279b;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  background-color: whitesmoke;
+  color: #5c7aea;
+}
+.search_bar:focus {
+  color: #14279b;
+}
+.search_button {
+  width: 3rem;
+  border: 1px solid #14279b;
+  background: #14279b;
+  text-align: center;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+.search_button * {
+  font-size: 16px;
+  color: whitesmoke;
+}
+.search_button:hover {
+  border: 1px solid #5c7aea;
+  background: #5c7aea;
+}
+.main_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.content_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  margin: auto;
+  color: #e6e6e6;
+  box-shadow: 2px 2px 2px 1px grey;
+}
+.content_1,
+.content_2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #3057d6;
+}
+.content_2 {
+  background-color: #5c7aea !important;
+}
+.row_wrapper {
+  display: flex;
+  width: 50%;
+}
+.row_wrapper .fa {
+  width: 1.5rem;
+  margin-right: 0.5rem;
+  font-size: 24px;
+}
+.text_1 {
+  font-size: 24px;
+}
+.text_2 {
+  font-size: 20px;
+}
+.icon_wrapper {
+  width: 50px;
+  height: 50px;
+}
+#flag {
+  height: 32px;
+  width: 32px;
+}
+#OWicon {
+  width: inherit;
+  height: inherit;
+  cursor: pointer;
+}
+.overlay {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000000b3;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup {
+  position: relative;
+  margin: 25vh auto;
+  padding: 2rem;
+  background: #5c7aea;
+  border-radius: 5px;
+  width: min(20vw, 70%);
+  transition: all 0.5s ease-in-out;
+  color: #e6e6e6;
+}
+.close_button {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  transition: all 0.2s;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+.close_button:hover {
+  color: lightcoral;
+}
+.popup_content {
+  margin-top: 1rem;
+  text-align: justify;
+}
+.fa-globe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -5vh 0 0 -5vh;
+  font-size: 10vh;
+  color: #14279b;
+}
+.clear {
+  clear: both;
+}
+.invisible {
+  opacity: 0;
+}
+@font-face {
+  font-family: "TenbyFive";
+  src: url("../fonts/tenby-five-webfont.otf"),
+    url("../fonts/tenby-five-webfont.eot"),
+    url("../fonts/tenby-five-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/tenby-five-webfont.woff2") format("woff2"),
+    url("../fonts/tenby-five-webfont.woff") format("woff"),
+    url("../fonts/tenby-five-webfont.ttf") format("truetype"),
+    url("../fonts/tenby-five-webfont.svg#TenbyFive") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@media only screen and (max-width: 811px) {
+  .search_wrapper,
+  .content_wrapper {
+    width: 80vw;
+    margin: auto;
+  }
+  .text_1 {
+    font-size: 20px;
+  }
+  .text_2 {
+    font-size: 16px;
+  }
+  .popup {
+    width: 70%;
+  }
+}
