@@ -154,11 +154,8 @@ footer .fab:hover {
   margin-right: 0.5rem;
   font-size: 24px;
 }
-.text_1 {
-  font-size: 24px;
-}
-.text_2 {
-  font-size: 20px;
+p[id] {
+  font-size: x-large;
 }
 .icon_wrapper {
   width: 50px;
@@ -218,8 +215,8 @@ footer .fab:hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -5vh 0 0 -5vh;
-  font-size: 10vh;
+  margin: -36px 0 0 -36px;
+  font-size: 72px;
   color: #14279b;
 }
 .clear {
@@ -240,19 +237,26 @@ footer .fab:hover {
   font-weight: normal;
   font-style: normal;
 }
-@media only screen and (max-width: 811px) {
+@media only screen and (max-width: 800px) {
   .search_wrapper,
   .content_wrapper {
     width: 80vw;
     margin: auto;
   }
-  .text_1 {
-    font-size: 20px;
-  }
-  .text_2 {
-    font-size: 16px;
+  p[id] {
+    font-size: medium;
   }
   .popup {
     width: 70%;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+  .search_wrapper,
+  .content_wrapper {
+    width: 60vw;
+    margin: auto;
+  }
+  .popup {
+    width: 50%;
   }
 }
