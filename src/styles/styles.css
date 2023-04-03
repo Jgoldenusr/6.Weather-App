@@ -194,7 +194,7 @@ p {
   top: 0;
   right: 1rem;
   transition: all 0.2s;
-  font-size: large;
+  font-size: xx-large;
   font-weight: bold;
   text-decoration: none;
   color: white;
@@ -249,7 +249,7 @@ p {
   }
   footer,
   .footer_icon {
-    font-size: small;
+    font-size: medium;
   }
   .search_wrapper,
   .content_wrapper {
